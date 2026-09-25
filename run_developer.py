@@ -4,7 +4,7 @@ from developer_agent import run_developer
 
 def main():
     # Load the artifact from the Planner Agent
-    plan_path = Path("plan.json")
+    plan_path = Path("artifacts") / "plan.json"
     
     if not plan_path.exists():
         print(f"Error: {plan_path} does not exist. Please run the Planner Agent first.")
@@ -19,7 +19,7 @@ def main():
     
     if validated_code:
         # Save the generated code to navigation_logic.py
-        output_path = Path("navigation_logic.py")
+        output_path = Path("generated") / "navigation_logic.py"
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(validated_code)
         print(f"Success! The validated Python code has been saved to '{output_path}'.")

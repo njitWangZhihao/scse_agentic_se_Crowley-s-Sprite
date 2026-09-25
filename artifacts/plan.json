@@ -1,0 +1,10 @@
+{
+    "strategy for robot navigation": "Navigate forward toward the goal, avoiding obstacles by turning left or right. Stop when the goal is reached or when blocked.",
+    "a list of decisions": [
+        "FORWARD",
+        "LEFT",
+        "RIGHT",
+        "STOP"
+    ],
+    "the point at which the robot must stop": "reaching the goal or encountering a blocked path"
+}

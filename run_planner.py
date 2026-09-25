@@ -18,7 +18,7 @@ def main():
         requirements = json.load(f)
     validated_plan = run_planner(requirements)
     if validated_plan:
-        plan_path = Path("plan.json")
+        plan_path = Path("artifacts") / "plan.json"
         with open(plan_path, "w", encoding="utf-8") as f:
             json.dump(validated_plan, f, indent=4, ensure_ascii=False)
         print(f"Validated plan written to {plan_path}.")
