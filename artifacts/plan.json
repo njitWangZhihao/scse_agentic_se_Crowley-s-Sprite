@@ -1,10 +1,10 @@
 {
-    "strategy for robot navigation": "Navigate forward toward the goal, avoiding obstacles by turning left or right. Stop when the goal is reached or when blocked.",
+    "strategy for robot navigation": "Navigate forward while continuously checking for obstacles, adjusting direction left or right to avoid blocks, and stopping when the goal is reached or when further movement is blocked.",
     "a list of decisions": [
         "FORWARD",
         "LEFT",
         "RIGHT",
         "STOP"
     ],
-    "the point at which the robot must stop": "reaching the goal or encountering a blocked path"
+    "the point at which the robot must stop": "When the goal is reached or when all movement directions are obstructed, ensuring a safe stop without colliding with obstacles."
 }

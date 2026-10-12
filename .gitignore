@@ -1,0 +1,12 @@
+﻿.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+*.log
+!trace.log
+generated/navigation_logic_before_*.py
+generated/navigation_logic_test68_passed.py
+generated/navigation_logic_verified.py

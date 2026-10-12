@@ -1,9 +1,16 @@
 def decide_next_move(state):
     if state['goal_ahead'] and not state['front_blocked']:
-        return "FORWARD"
+        return 'FORWARD'
     elif state['goal_on_left'] and not state['left_blocked']:
-        return "LEFT"
+        return 'LEFT'
     elif state['goal_on_right'] and not state['right_blocked']:
-        return "RIGHT"
+        return 'RIGHT'
     else:
-        return "STOP"
+        if not state['front_blocked']:
+            return 'FORWARD'
+        elif not state['left_blocked']:
+            return 'LEFT'
+        elif not state['right_blocked']:
+            return 'RIGHT'
+        else:
+            return 'STOP'
