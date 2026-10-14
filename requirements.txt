@@ -1,0 +1,6 @@
+ollama
+pytest
+ir-sim
+numpy
+matplotlib
+PyYAML
